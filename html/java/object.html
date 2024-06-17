@@ -1,0 +1,62 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objects
+
+    </title>
+</head>
+
+<body>
+    <div id="result"></div>
+    <script>
+
+        let college = {
+            student1: {
+                name: "seema", class: "bcs",
+                education: {
+                    ssc: { school: "YMN SCHOOL", year: 2002, grade: "70%" },
+                    hsc: { school: "L.B.S", year: 2004, grade: "60%" }
+                }
+            },
+
+            student2: { name: "dinesh", class: "BCA", email: "dinesh@email.com" },
+            student3: { name: "mahesh", class: "BCA", email: "mahesh123@email.com", contact: 8799239056 },
+            student4: { name: "suresh", class: "bcs", email: "suresh456@mail.com", contact: 7499567877 },
+        
+            displayData: function (id) {
+                let data = college["student" + id];
+                console.log(data)
+                if (data == undefined) {
+                    return "No Data Found";
+                }
+                let table = "<table border=1>";
+                for (const key in data) {
+                    table += "<tr><th>" + key + "</th><td>" + data[key] + "</td></tr>";
+                }
+                table += "</table>";
+                return table;
+            }
+        }
+       
+        // let studentid = prompt("Enter Student id")
+        // let res = college.displayData(studentid);
+        // document.getElementById("result").innerHTML = res
+        
+let ob = college;
+for(cinst key in ob){
+    console.log(ob[key])
+}
+
+
+
+
+    </script>
+</body>
+
+</html> 
+
+
+

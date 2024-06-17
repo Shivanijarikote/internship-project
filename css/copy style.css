@@ -1,0 +1,197 @@
+header {
+    box-shadow: 3px 3px 3px 2px gray;
+}
+
+.logo {
+    width: 100px;
+    margin-left: 150px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between; /* Align logo and navbar at opposite ends */
+    align-items: center; /* Vertically center items */
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.navbar li {
+    margin: 0 20px; /* Adjust the spacing between navbar items */
+    position: relative; /* Add position relative for dropdown positioning */
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #000; 
+    font-weight: bold;
+}
+
+.btn {
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(0, 187, 255);
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    /* z-index: 1; */
+    /* margin-top: 5px; Adjust the dropdown position */
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Show the dropdown content when hovering over "about us" */
+#abt:hover .dropdown-content {
+    display: block;
+}
+
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Style the downward arrow icon */
+.navbar li img {
+    width: 12px;
+    height: auto;
+    margin-left: 5px; /* Adjust the spacing between text and icon */
+}
+
+/* Change color of navbar links on hover */
+.navbar li:hover a {
+    color: #00bbf0;
+}
+
+
+
+/* Dropdown styles */
+.navbar li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Show dropdown content on hover */
+.navbar li:hover .dropdown-content {
+    display: block;
+}
+
+/* Style the dropdown links */
+.navbar li .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.navbar li .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Position the dropdown content */
+.navbar li .dropdown-content a {
+    position: relative;
+}
+
+/* Position dropdown content above the dropdown button */
+.navbar li .dropdown-content {
+    top: 40px;
+    left: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.abt:hover .dropdown-content,
+.uni:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+  .service{
+    flex-wrap: nowrap;
+  }
+
+  .service .card{
+    padding: 0px !important;
+    width: 300px !important;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  }
+
+.service .card img:hover{
+    filter: grayscale(150%);
+    
+}
+
+.service .card:hover{
+    background-color: blue;
+    color: white;
+}
